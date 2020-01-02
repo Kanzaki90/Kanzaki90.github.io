@@ -53,8 +53,6 @@ var forecast_module = (function () {
     }
 
     function _start_retrieval(i_city_id) {
-        console.log(i_city_id);
-
         _get_gurrent_conditions(i_city_id);
     }
 
