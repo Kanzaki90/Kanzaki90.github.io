@@ -3,7 +3,10 @@ var auto_complete_module = (function () {
 
     function _search(i_city, callback) {
 
+
         // let url = "http://dataservice.accuweather.com/locations/v1/cities/autocomplete?apikey=aMmqZLi2OPbyU9XtvGrRcWryO67u1BJO&q=" + i_city + "&language=en-US";
+
+        //walla
         let url = "http://dataservice.accuweather.com/locations/v1/cities/autocomplete?apikey=GWCsM5VwA33NiOJkmMSRGanNNPLM8Gtr&q=" + i_city + "&language=en-US";
 
         var xhttp = new XMLHttpRequest();
