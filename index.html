@@ -169,6 +169,7 @@
             forecast_module.start_retrieval(i_city_id);
         }
 
+        var temp;
         function data_analyzer(current_weather, daily) {
 
             global_q_flag = 0;
@@ -217,6 +218,8 @@
             }
 
             global_current_forecast = current_weather["celcius"] + " C";
+
+            temp = daily;
 
             document.getElementById('weather_text').innerText = daily[0]["Day"]["LongPhrase"];
 
