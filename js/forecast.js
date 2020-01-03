@@ -4,10 +4,10 @@ var forecast_module = (function () {
     function _get_gurrent_conditions(i_city_id_key) {
 
         //gmail
-        //let url = "http://dataservice.accuweather.com/currentconditions/v1/" + i_city_id_key + "?apikey=5nSS4A4M6R0aK7l3xPQfgfgRQWfzB2TV&language=en-US&details=true";
+        let url = "http://dataservice.accuweather.com/currentconditions/v1/" + i_city_id_key + "?apikey=5nSS4A4M6R0aK7l3xPQfgfgRQWfzB2TV&language=en-US&details=true";
         
         //walla
-        let url = "http://dataservice.accuweather.com/currentconditions/v1/" + i_city_id_key + "?apikey=GWCsM5VwA33NiOJkmMSRGanNNPLM8Gtr&language=en-US&details=true";
+        // let url = "http://dataservice.accuweather.com/currentconditions/v1/" + i_city_id_key + "?apikey=GWCsM5VwA33NiOJkmMSRGanNNPLM8Gtr&language=en-US&details=true";
         var xhttp = new XMLHttpRequest();
 
         xhttp.onreadystatechange = function () {
@@ -38,9 +38,9 @@ var forecast_module = (function () {
     function _get_five_days_forecast(i_city_id_key, current_weather) {
 
         //gmail
-        // let url = "http://dataservice.accuweather.com/forecasts/v1/daily/5day/" + i_city_id_key + "?apikey=5nSS4A4M6R0aK7l3xPQfgfgRQWfzB2TV&language=en-US&details=true&metric=true";
+        let url = "http://dataservice.accuweather.com/forecasts/v1/daily/5day/" + i_city_id_key + "?apikey=5nSS4A4M6R0aK7l3xPQfgfgRQWfzB2TV&language=en-US&details=true&metric=true";
         //walla
-        let url = "http://dataservice.accuweather.com/forecasts/v1/daily/5day/" + i_city_id_key + "?apikey=GWCsM5VwA33NiOJkmMSRGanNNPLM8Gtr&language=en-US&details=true&metric=true";
+        // let url = "http://dataservice.accuweather.com/forecasts/v1/daily/5day/" + i_city_id_key + "?apikey=GWCsM5VwA33NiOJkmMSRGanNNPLM8Gtr&language=en-US&details=true&metric=true";
 
         var xhttp = new XMLHttpRequest();
 
